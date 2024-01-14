@@ -8,7 +8,6 @@ class Obstacle:
         self.game=game
         self.x,self.y = pos
         self.size = size
-        self.hitbox = [self.x,self.y,self.size]
 
     def draw(self):
         pg.draw.rect(self.game.screen,'darkgrey', (self.x*self.game.scale,self.y*self.game.scale,self.size*self.game.scale,self.size*self.game.scale),0)
